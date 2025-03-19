@@ -7,7 +7,7 @@ var activated_category_color = Color("#70bafa")
 var state = {}
 
 func _enter_tree():
-	inspector = get_editor_interface().get_inspector()
+	inspector = EditorInterface.get_inspector()
 	inspector.edited_object_changed.connect(on_inspector_edited_object_changed)
 	inspector.sort_children.connect(on_inspector_sort_children)
 
